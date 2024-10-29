@@ -1,0 +1,202 @@
+[
+    {
+        "race": "byakhees",
+        "category": "lesser servitor race",
+        "id": 1
+    },
+    {
+        "race": "cats from saturn",
+        "category": "lesser servitor race",
+        "id": 2
+    },
+    {
+        "race": "cats of sadoqua",
+        "category": "lesser servitor race",
+        "id": 3
+    },
+    {
+        "race": "chthonians",
+        "category": "great independent race",
+        "id": 4
+    },
+    {
+        "race": "colour out of space",
+        "category": "great independent race",
+        "id": 5
+    },
+    {
+        "race": "dark youngs of shub-niggurath",
+        "category": "great servitor race",
+        "id": 6
+    },
+    {
+        "race": "deep ones",
+        "category": "lesser servitor race",
+        "id": 7
+    },
+    {
+        "race": "dholes",
+        "category": "great independent race",
+        "id": 8
+    },
+    {
+        "race": "dimensional shamblers",
+        "category": "lesser independent race",
+        "id": 9
+    },
+    {
+        "race": "elder things",
+        "category": "lesser independent race",
+        "id": 10
+    },
+    {
+        "race": "fire vampires",
+        "category": "lesser servitor race",
+        "id": 11
+    },
+    {
+        "race": "flying polyps",
+        "category": "great independent race",
+        "id": 12
+    },
+    {
+        "race": "formless spawn of tsathoggua",
+        "category": "lesser independent race",
+        "id": 13
+    },
+    {
+        "race": "fthagguas",
+        "category": "lesser independent race",
+        "id": 14
+    },
+    {
+        "race": "ghasts",
+        "category": "lesser independent race",
+        "id": 15
+    },
+    {
+        "race": "ghouls",
+        "category": "lesser independent race",
+        "id": 16
+    },
+    {
+        "race": "gloons",
+        "category": "lesser independent race",
+        "id": 17
+    },
+    {
+        "race": "gnoph-keh",
+        "category": "great independent race",
+        "id": 18
+    },
+    {
+        "race": "great race of yith",
+        "category": "great independent race",
+        "id": 19
+    },
+    {
+        "race": "gray weavers",
+        "category": "lesser servitor race",
+        "id": 20
+    },
+    {
+        "race": "gugs",
+        "category": "lesser servitor race",
+        "id": 21
+    },
+    {
+        "race": "hounds of tindalos",
+        "category": "great independent race",
+        "id": 22
+    },
+    {
+        "race": "hunting horrors",
+        "category": "great servitor race",
+        "id": 23
+    },
+    {
+        "race": "lloigors",
+        "category": "great servitor race",
+        "id": 24
+    },
+    {
+        "race": "mi-gos",
+        "category": "lesser independent race",
+        "id": 25
+    },
+    {
+        "race": "moon-beasts",
+        "category": "great independent race",
+        "id": 26
+    },
+    {
+        "race": "night-gaunts",
+        "category": "lesser servitor race",
+        "id": 27
+    },
+    {
+        "race": "rat-things",
+        "category": "lesser servitor race",
+        "id": 28
+    },
+    {
+        "race": "sand-dwellers",
+        "category": "lesser servitor race",
+        "id": 29
+    },
+    {
+        "race": "serpent people",
+        "category": "lesser independent race",
+        "id": 30
+    },
+    {
+        "race": "servitors of the outer gods",
+        "category": "great servitor race",
+        "id": 31
+    },
+    {
+        "race": "shantaks",
+        "category": "lesser servitor race",
+        "id": 32
+    },
+    {
+        "race": "shoggoths",
+        "category": "lesser servitor race",
+        "id": 33
+    },
+    {
+        "race": "spiders of leng",
+        "category": "great independent race",
+        "id": 34
+    },
+    {
+        "race": "star spawns of cthulhu",
+        "category": "great servitor race",
+        "id": 35
+    },
+    {
+        "race": "star vampire",
+        "category": "lesser independent race",
+        "id": 36
+    },
+    {
+        "race": "tcho-tchos",
+        "category": "lesser servitor race",
+        "id": 37
+    },
+    {
+        "race": "voormis",
+        "category": "lesser servitor race",
+        "id": 38
+    },
+    {
+        "race": "yaddithians",
+        "category": "lesser independent race",
+        "id": 39
+    },
+    {
+        "race": "zoogs",
+        "category": "lesser independent race",
+        "id": 40
+    }
+]
