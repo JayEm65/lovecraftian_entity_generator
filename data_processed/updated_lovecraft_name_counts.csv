@@ -3,7 +3,7 @@ Name,Count,Updated_Count
 abhoth,0,0
 apocolothoth,0,0
 atlach-natcha,0,0
-azathoth,40,17
+azathoth,40,19
 basatan,0,0
 bokrug,15,5
 byakhee,0,0
@@ -14,12 +14,12 @@ chaugnar faugn,2,0
 chthonian,0,0
 colour out of space,4,0
 cthugha,0,0
-cthulhu,98,39
+cthulhu,98,45
 cxaxukluth,0,0
 d'endrrah,0,0
-dagon,30,13
+dagon,30,15
 dark young of shub-niggurath,0,0
-darkness,350,162
+darkness,350,175
 deep one,3,0
 dhole,0,0
 dimensional shambler,1,0
@@ -29,10 +29,10 @@ fire vampire,0,0
 flying polyp,0,0
 formless spawn of tsathoggua,0,0
 fthaggua,0,0
-ghast,128,2
-ghatanothoa,68,27
+ghast,128,5
+ghatanothoa,68,34
 ghizguth,0,0
-ghoul,200,31
+ghoul,200,37
 gloon,0,0
 gnoph-keh,2,0
 gobogeg,0,0
@@ -40,8 +40,8 @@ god of the red flux,0,0
 gol-goroth,0,0
 gray weaver,0,0
 great race of yith,0,0
-gug,40,9
-han,6200,0
+gug,40,10
+han,6200,2
 hastur,4,2
 high priest not to be described,0,0
 hound of tindalos,0,0
@@ -64,12 +64,12 @@ mother hydra,2,0
 n'gha-kthun,0,0
 naggoob,0,0
 night-gaunt,70,0
-nodens,8,7
-nug,16,4
+nodens,8,8
+nug,16,5
 nyaghoggua,0,0
-nyarlathotep,94,40
+nyarlathotep,94,47
 nyogtha,0,0
-oorn,20,8
+oorn,20,10
 quachil uttaus,0,0
 quumyagga,0,0
 rat-thing,0,0
@@ -80,12 +80,12 @@ sebek,0,0
 serpent person,0,0
 servitor of the outer gods,0,0
 sfatlicllp,0,0
-shantak,43,20
+shantak,43,30
 shathak,0,0
 shaurash-ho,0,0
 shista,0,0
 sho-gath,0,0
-shoggoth,22,0
+shoggoth,22,2
 shub-niggurath,40,0
 shudde m'ell,0,0
 spider of leng,0,0
@@ -99,7 +99,7 @@ thasaidon,0,0
 thog,40,0
 tree-man of M'bwa,0,0
 tru'nembra,0,0
-tsathoggua,40,19
+tsathoggua,40,20
 tulzscha,0,0
 ubb,274,0
 ubbo-sathla,0,0
@@ -109,11 +109,11 @@ vulthoom,0,0
 xexanoth,0,0
 y'golonac,0,0
 yaddithian,0,0
-yeb,28,3
+yeb,28,4
 yegg-ha,0,0
 yhoundeh,0,0
 yibb-tstll,0,0
-yig,51,42
+yig,51,51
 yog-sothoth,62,0
 ythogtha,0,0
 zhar,0,0
@@ -139,11 +139,11 @@ elder things,8,0
 fire vampires,0,0
 flying polyps,0,0
 fthagguas,0,0
-ghasts,19,19
-ghouls,115,113
+ghasts,19,17
+ghouls,115,114
 gloons,0,0
 gray weavers,0,0
-gugs,30,28
+gugs,30,30
 hounds of tindalos,1,0
 hunting horrors,0,0
 mi-gos,0,0
@@ -154,7 +154,7 @@ sand-dwellers,0,0
 serpent people,0,0
 servitors of the outer gods,0,0
 shantaks,13,13
-shoggoths,18,14
+shoggoths,18,18
 spiders of leng,0,0
 star spawns of cthulhu,0,0
 tcho-tchos,2,0
