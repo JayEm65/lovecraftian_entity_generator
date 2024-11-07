@@ -26,9 +26,3 @@ This project involves scraping, analyzing, and visualizing H.P. Lovecraft's work
 3. **Filter Texts**: The collected text is filtered to identify mentions of various Lovecraftian entities.
 4. **Count Occurrences**: The frequency of entity mentions is counted, and the results are saved and visualized.
 5. **Train LSTM Model**: An LSTM model is trained on the entity names to generate new Lovecraftian-like names.
-
-## Usage:
-1. Ensure you have the required dependencies installed: `requests`, `beautifulsoup4`, `nltk`, `pandas`, `matplotlib`, `tensorflow`.
-2. Run the Python script to start scraping and analyzing Lovecraft's works.
-3. Visualize the results and see the generated entity names.
-
