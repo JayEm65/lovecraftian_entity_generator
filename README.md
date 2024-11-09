@@ -33,21 +33,6 @@ This project involves scraping, analyzing, and visualizing H.P. Lovecraft's work
 
 This project is a data scraping and analysis tool focused on the works of H.P. Lovecraft. It scrapes various text-based content (fiction, poetry, essays, and letters) from an online source, collects data from a Lovecraft API, and analyzes common entities (creatures, races, gods, etc.) in the texts. Additionally, it includes a character-level LSTM model to explore entity name generation based on common patterns.
 
-## Table of Contents
-
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Setup and Installation](#setup-and-installation)
-- [Usage](#usage)
-  - [1. Scraping Texts](#1-scraping-texts)
-  - [2. API Data Collection](#2-api-data-collection)
-  - [3. Data Cleaning and Analysis](#3-data-cleaning-and-analysis)
-  - [4. Visualizations](#4-visualizations)
-  - [5. Character-Level LSTM Model](#5-character-level-lstm-model)
-- [Results](#results)
-- [Dependencies](#dependencies)
-- [Acknowledgments](#acknowledgments)
 
 ## Project Overview
 
