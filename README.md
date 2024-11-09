@@ -26,3 +26,59 @@ This project involves scraping, analyzing, and visualizing H.P. Lovecraft's work
 3. **Filter Texts**: The collected text is filtered to identify mentions of various Lovecraftian entities.
 4. **Count Occurrences**: The frequency of entity mentions is counted, and the results are saved and visualized.
 5. **Train LSTM Model**: An LSTM model is trained on the entity names to generate new Lovecraftian-like names.
+
+
+
+# Lovecraftian Text Scraping and Analysis Project
+
+This project is a data scraping and analysis tool focused on the works of H.P. Lovecraft. It scrapes various text-based content (fiction, poetry, essays, and letters) from an online source, collects data from a Lovecraft API, and analyzes common entities (creatures, races, gods, etc.) in the texts. Additionally, it includes a character-level LSTM model to explore entity name generation based on common patterns.
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Setup and Installation](#setup-and-installation)
+- [Usage](#usage)
+  - [1. Scraping Texts](#1-scraping-texts)
+  - [2. API Data Collection](#2-api-data-collection)
+  - [3. Data Cleaning and Analysis](#3-data-cleaning-and-analysis)
+  - [4. Visualizations](#4-visualizations)
+  - [5. Character-Level LSTM Model](#5-character-level-lstm-model)
+- [Results](#results)
+- [Dependencies](#dependencies)
+- [Acknowledgments](#acknowledgments)
+
+## Project Overview
+
+This project performs the following steps:
+
+1. **Scrapes Lovecraft's writings** from a selected website.
+2. **Collects data** on Lovecraftian entities via API calls.
+3. **Processes and cleans** the data for analysis.
+4. **Analyzes** the presence of key entities in the texts.
+5. **Visualizes** the most common Lovecraftian entities.
+6. **Generates new entity names** using a character-level LSTM model.
+
+## Features
+
+- **Scraping Lovecraft Works**: Gathers texts from various categories on an online source.
+- **API Data Collection**: Pulls data on creatures, races, and gods from the Lovecraft API.
+- **Data Cleaning and Analysis**: Cleans entity names, merges plural forms, and counts occurrences in the texts.
+- **Visualization**: Creates bar charts of the most mentioned entities.
+- **LSTM Model for Name Generation**: Generates new Lovecraftian entity names based on character patterns.
+
+## Project Structure
+
+```plaintext
+├── data/                        # Folder containing scraped and processed data files
+│   ├── lovecraft_<content>.csv  # CSV files for each content type (e.g., fiction, poetry)
+│   ├── <entity>.json            # JSON files containing data from API (e.g., creatures.json)
+│   ├── lovecraft_name_counts.csv # CSV file with entity counts and types
+├── scripts/                     # Folder containing project scripts
+│   ├── scrape_lovecraft.py      # Script to scrape and save Lovecraft texts
+│   ├── api_collection.py        # Script to collect data from API
+│   ├── data_cleaning.py         # Script for data cleaning and analysis
+│   ├── lstm_name_generator.py   # Script for the LSTM model
+└── README.md                    # Project documentation
+
