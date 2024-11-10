@@ -1,69 +1,112 @@
-## Project Overview
-This project involves scraping, analyzing, and visualizing H.P. Lovecraft's works, as well as using machine learning to generate Lovecraftian names based on the entities identified in his texts.
+# Lovecraftian Entity Generator: Unveiling Cosmic Horrors
 
-## Features:
-1. **Web Scraping**:
-    - Scrapes Lovecraft's fiction, poetry, essays, and letters from [H.P. Lovecraft's website](https://www.hplovecraft.com/writings/texts/).
-    - Standardizes titles and collects the relevant text.
+### by Marc Jahnert
 
-2. **API Data Collection**:
-    - Fetches data about Lovecraftian entities (e.g., creatures, gods, races) from an external API and stores it as JSON files.
+This project explores the intersection of H.P. Lovecraft’s cosmic horror and machine learning, generating new, fictional entities by training a character-level LSTM model on Lovecraft’s existing works. The project scrapes and processes Lovecraft’s texts, analyzes common entities, and produces names that adhere to Lovecraft's unique conventions.
 
-3. **Data Analysis**:
-    - Analyzes the scraped and fetched data to identify entities (e.g., creatures, gods) mentioned in Lovecraft's works.
-    - Counts occurrences of these entities in the texts.
-
-4. **Visualization**:
-    - Visualizes the most common Lovecraftian entities using a bar chart.
-    - Offers the ability to filter by entity type (e.g., `Great Old One`, `Creature`).
-
-5. **Sequence Generation**:
-    - Uses an LSTM model to train on the names of Lovecraftian entities and generate new names that resemble those found in the author's works.
-
-## How It Works:
-1. **Scrape Works**: Web scraping pulls down the text for various works from Lovecraft's website.
-2. **Fetch API Data**: API calls are made to an external Lovecraft API to retrieve data on various entities.
-3. **Filter Texts**: The collected text is filtered to identify mentions of various Lovecraftian entities.
-4. **Count Occurrences**: The frequency of entity mentions is counted, and the results are saved and visualized.
-5. **Train LSTM Model**: An LSTM model is trained on the entity names to generate new Lovecraftian-like names.
-
-
-
-# Lovecraftian Text Scraping and Analysis Project
-
-This project is a data scraping and analysis tool focused on the works of H.P. Lovecraft. It scrapes various text-based content (fiction, poetry, essays, and letters) from an online source, collects data from a Lovecraft API, and analyzes common entities (creatures, races, gods, etc.) in the texts. Additionally, it includes a character-level LSTM model to explore entity name generation based on common patterns.
-
+---
 
 ## Project Overview
 
-This project performs the following steps:
+**Google Slides:** [Lovecraftian Entity Generator: Unveiling Cosmic Horrors](https://docs.google.com/presentation/d/1QjYuLG4xp1hbzdGRNWBjPAmmWQDwZ7SIeqHvyDPXDLk/edit?usp=sharing)
 
-1. **Scrapes Lovecraft's writings** from a selected website.
-2. **Collects data** on Lovecraftian entities via API calls.
-3. **Processes and cleans** the data for analysis.
-4. **Analyzes** the presence of key entities in the texts.
-5. **Visualizes** the most common Lovecraftian entities.
-6. **Generates new entity names** using a character-level LSTM model.
+**Goal:**  
+The project generates Lovecraftian entity names by scraping Lovecraft’s works, analyzing and processing the text, and then using a character-level LSTM (Long Short-Term Memory) model to create new names that align with Lovecraft’s stylistic conventions.
 
-## Features
+**Key Features:**
+- **Web Scraping**: Scrapes Lovecraft’s texts for entity references.
+- **API Data Integration**: Fetches data on Lovecraftian creatures, gods, and races from an external API.
+- **Data Cleaning**: Standardizes names and merges variations (e.g., plural forms, spelling differences).
+- **Exploratory Data Analysis (EDA)**: Identifies and visualizes the most common Lovecraftian entities.
+- **Name Generation**: Utilizes an LSTM model to generate new Lovecraftian-like names.
 
-- **Scraping Lovecraft Works**: Gathers texts from various categories on an online source.
-- **API Data Collection**: Pulls data on creatures, races, and gods from the Lovecraft API.
-- **Data Cleaning and Analysis**: Cleans entity names, merges plural forms, and counts occurrences in the texts.
-- **Visualization**: Creates bar charts of the most mentioned entities.
-- **LSTM Model for Name Generation**: Generates new Lovecraftian entity names based on character patterns.
+---
 
-## Project Structure
+## How It Works
 
-```plaintext
-├── data/                        # Folder containing scraped and processed data files
-│   ├── lovecraft_<content>.csv  # CSV files for each content type (e.g., fiction, poetry)
-│   ├── <entity>.json            # JSON files containing data from API (e.g., creatures.json)
-│   ├── lovecraft_name_counts.csv # CSV file with entity counts and types
-├── scripts/                     # Folder containing project scripts
-│   ├── scrape_lovecraft.py      # Script to scrape and save Lovecraft texts
-│   ├── api_collection.py        # Script to collect data from API
-│   ├── data_cleaning.py         # Script for data cleaning and analysis
-│   ├── lstm_name_generator.py   # Script for the LSTM model
-└── README.md                    # Project documentation
+### 1. **Scrape Lovecraft’s Works**  
+Using BeautifulSoup and requests, the project scrapes Lovecraft's writings from his website, which includes fiction, poetry, essays, and letters.
+
+### 2. **Fetch Lovecraftian Entity Data**  
+The Lovecraftian API (by Iván Fuentes) is used to pull structured data about entities, such as creatures, gods, and races. This supplements the scraped text to ensure a diverse collection of entity references.
+
+### 3. **Text Processing & Data Cleaning**  
+Scraped data is preprocessed to clean and standardize entity names, correcting for plural forms and spelling variations.
+
+### 4. **Exploratory Data Analysis (EDA)**  
+The dataset is analyzed to identify the most common Lovecraftian entities, helping refine the name generation model.
+
+### 5. **LSTM Model for Name Generation**  
+A character-level LSTM model is trained on the cleaned dataset. It learns the patterns in Lovecraftian names and generates new ones based on these learned conventions.
+
+---
+
+## Project Breakdown
+
+### Data Collection & Preprocessing  
+- **Scraping Lovecraft's Texts**: Texts are pulled from [H.P. Lovecraft's Website](https://www.hplovecraft.com/writings/texts/), with error handling for a stable extraction process.
+- **Merging Entity Variations**: Plural forms (e.g., "deep ones" vs. "deep one") are merged, and common spelling discrepancies are corrected for consistency.
+- **API Integration**: The [The Lovecraftian API](https://lovecraftapirest.fly.dev) is pulled for additional data on creatures, gods, and Great Old Ones to expand the variety of the dataset.
+
+### Exploratory Data Analysis  
+The data is analyzed to identify the most frequently mentioned Lovecraftian entities, guiding the generation of names that fit within these parameters.
+
+---
+
+## Model Development & Architecture
+
+### LSTM Model Details  
+- **Character-Level Model**: The model processes sequences of characters, capturing the nuances of Lovecraftian name structure.
+- **Architecture**: The model consists of two LSTM layers with dropout layers to prevent overfitting.
+- **Accuracy**: Achieved 99% accuracy through optimized sequence length, normalization, and vocabulary handling.
+- **Training Process**: Input-output sequences are created based on 5-character windows to predict the next character in the name sequence, generating realistic entity names.
+
+---
+
+## Challenges & Solutions
+
+### Key Challenges:
+- **Data Quality Inconsistencies**: Lovecraft’s texts contained inconsistencies that complicated the data cleaning process.
+- **Stylistic Alignment**: Ensuring that generated names fit Lovecraft’s style required fine-tuning the model.
+- **Avoiding Overfitting**: Balancing model accuracy and generalization involved using dropout layers.
+
+### Solutions Implemented:
+- **Data Cleaning**: Various functions were applied to standardize names and merge similar entities.
+- **Regularization**: Dropout layers in the LSTM prevented overfitting, ensuring generalization of the model.
+
+---
+
+## Results & Future Work
+
+### Results
+- **Name Generation**: The model successfully generates Lovecraftian names that closely resemble those found in the author's works.
+- **Accuracy**: Achieved 99% accuracy in generating names stylistically aligned with Lovecraft’s conventions.
+
+### Future Directions:
+- **Longer Sequences & Transformer Models**: Experimenting with these techniques to increase the richness of generated names.
+- **Improved Preprocessing**: Incorporating more subtle stylistic features from Lovecraft’s texts for better model performance.
+
+---
+
+## Conclusion
+
+This project has developed a model capable of generating realistic, novel Lovecraftian entities. It opens up new possibilities in game design, horror fiction, and immersive world-building.
+
+**Future Vision:**  
+An actual app to run this generator on mobile and web. The model is yet to be expanded with advanced architectures such as transformers, allowing for more creativity and sophistication in entity generation. (LLM)
+
+---
+
+## Tools & Libraries:
+- **BeautifulSoup**: For web scraping Lovecraft’s works.
+- **Requests**: For making HTTP requests to scrape text.
+- **TensorFlow & Keras**: For implementing the LSTM model.
+- **Pandas & NLTK* (Yet to be used.*)**: For preprocessing and data handling.
+
+---
+
+## Acknowledgments
+
+- **H.P. Lovecraft**: For his pioneering work in cosmic horror and the Cthulhu Mythos.
+- **[Iván Fuentes](https://github.com/navifuentes)**: For providing The Lovecraftian API.
 
